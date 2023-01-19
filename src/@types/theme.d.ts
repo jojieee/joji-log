@@ -113,5 +113,6 @@ declare module 'styled-components' {
     }
     figure: number
     pointer: any
+    default_padding: any
   }
 }

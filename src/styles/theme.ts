@@ -229,6 +229,7 @@ const typography = {
 }
 
 const figure = 0.5
+const default_padding = '1'
 
 const shadow = {
   xs: '0px 1px 2px rgba(26, 26, 26, 0.05)',
@@ -253,7 +254,8 @@ const defalutTheme = {
   typography,
   shadow,
   figure,
-  pointer
+  pointer,
+  default_padding
 }
 
 export const lightTheme: DefaultTheme = {

@@ -1,12 +1,21 @@
 import React from 'react'
-import { HomeMainWrapper, HeaderWrapper, ContentWrapper, FooterWrapper } from './HomeMainStyle'
+import { HomeMainWrapper, ContentWrapper } from './HomeMainStyle'
 
 const HomeMain = () => {
   return (
     <HomeMainWrapper>
-      <HeaderWrapper>Header</HeaderWrapper>
-      <ContentWrapper>Content</ContentWrapper>
-      <FooterWrapper>Footer</FooterWrapper>
+      <ContentWrapper>1</ContentWrapper>
+      <ContentWrapper>2</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>1</ContentWrapper>
+      <ContentWrapper>2</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>1</ContentWrapper>
+      <ContentWrapper>2</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
     </HomeMainWrapper>
   )
 }
