@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.div`
     border: 1px solid #ddd;
   }
 
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #85f032;
   background: #050505;
   color: ${({ theme }) => theme.color.white};
 `

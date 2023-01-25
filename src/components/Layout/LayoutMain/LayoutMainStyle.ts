@@ -5,7 +5,9 @@ export const LayoutMainWrapper = styled.div`
   flex-direction: column;
   min-height: 100vh;
 `
-export const LayoutContent = styled.div`
+export const LayoutContent = styled.div<{
+  mainBackground: string
+}>`
   width: 100%;
   min-width: ${({ theme }) => theme.breakpoints.values.minimum}px;
   min-height: calc(
@@ -16,4 +18,8 @@ export const LayoutContent = styled.div`
   align-items: center;
   justify-content: center;
   padding: ${({ theme }) => theme.default_padding}rem;
+  ${({ mainBackground }) => mainBackground && `background: url(${mainBackground})`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 `

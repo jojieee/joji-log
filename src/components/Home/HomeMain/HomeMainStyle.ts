@@ -18,4 +18,5 @@ export const ContentWrapper = styled.div`
   }
   box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
   transition: all 0.2s ease-in-out;
+  background: rgba(133, 240, 50, 0.5);
 `

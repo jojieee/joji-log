@@ -10,7 +10,7 @@ export const FooterWrapper = styled.div`
   justify-content: space-between;
   background: #3a3a3a;
   color: ${({ theme }) => theme.color.black};
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #85f032;
 `
 export const ContactWrapper = styled.div`
   display: flex;

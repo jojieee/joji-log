@@ -16,6 +16,10 @@ const HomeMain = () => {
       <ContentWrapper>3</ContentWrapper>
       <ContentWrapper>3</ContentWrapper>
       <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
+      <ContentWrapper>3</ContentWrapper>
     </HomeMainWrapper>
   )
 }
