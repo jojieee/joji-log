@@ -1,4 +1,5 @@
 export const layout = {
   index: '/',
-  about: 'about'
+  about: '/about',
+  content: '/content'
 }
