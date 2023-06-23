@@ -10,7 +10,7 @@ const Header = () => {
     <HeaderWrapper>
       <NavWrapper>
         <Logo onClick={handleHome}>
-          <Big>LUZO</Big>studio.
+          <Big>ZOZI</Big>studio.
         </Logo>
         <Navs>Study</Navs>
         <Navs onClick={handleAbout}>About</Navs>

@@ -4,7 +4,7 @@ const useFooter = () => {
   const { openNewPage } = useLocation()
 
   const handleInstagram = () => {
-    window.open('https://www.instagram.com/luzo.official/', '_blank')
+    window.open('https://www.instagram.com/j5ning/', '_blank')
   }
   return { handleInstagram }
 }
