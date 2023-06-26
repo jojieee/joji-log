@@ -6,8 +6,8 @@ const HomeDetail = () => {
 
   return (
     <div>
-      <div>{contentListData[parseInt(router.query.id as string, 10) - 1].title}</div>
-      <div>{contentListData[parseInt(router.query.id as string, 10) - 1].content}</div>
+      <div>{contentListData[parseInt(router.query.id as string, 10) - 1]?.title}</div>
+      <div>{contentListData[parseInt(router.query.id as string, 10) - 1]?.content}</div>
     </div>
   )
 }
