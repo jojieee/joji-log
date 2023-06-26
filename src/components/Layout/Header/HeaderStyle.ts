@@ -9,11 +9,12 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   img {
     border-radius: ${({ theme }) => (theme.figure / 4) * 25}rem;
-    border: 1px solid #ddd;
+    border: 1px solid ${({ theme }) => theme.color.gray_300};
   }
-
-  border-bottom: 1px solid #85f032;
-  background: #050505;
+  position: sticky;
+  top: 0;
+  background: ${({ theme }) => theme.color.gray_900};
+  border-bottom: 1px solid ${({ theme }) => theme.color.key_color};
   color: ${({ theme }) => theme.color.white};
 `
 
@@ -28,14 +29,14 @@ export const Logo = styled.div`
   display: flex;
   ${({ theme }) => theme.pointer};
   gap: ${({ theme }) => theme.figure / 4}rem;
-  color: #eee;
+  color: ${({ theme }) => theme.color.gray_200};
   align-items: flex-end;
   font-size: ${({ theme }) => (theme.figure / 4) * 7}rem;
 `
 export const Big = styled.div`
   font-size: ${({ theme }) => theme.figure * 3}rem;
   font-weight: bold;
-  color: #85f032;
+  color: ${({ theme }) => theme.color.key_color};
 `
 
 export const Navs = styled.div`
@@ -43,6 +44,6 @@ export const Navs = styled.div`
   ${({ theme }) => theme.pointer};
   transition: all 0.8s;
   &:hover {
-    color: #85f032;
+    color: ${({ theme }) => theme.color.key_color};
   }
 `

@@ -21,6 +21,7 @@ declare module 'styled-components' {
 
       white: string
       black: string
+      key_color: string
 
       gray_25: string
       gray_50: string

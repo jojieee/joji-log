@@ -22,7 +22,7 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.figure * 2}rem;
-  border: 1px solid #85f032;
+  border: 1px solid ${({ theme }) => theme.color.key_color};
 `
 export const ContentTitle = styled.div`
   white-space: normal;
@@ -36,5 +36,5 @@ export const ContentTitle = styled.div`
 export const Content = styled(ContentTitle)`
   -webkit-line-clamp: 4;
   font-size: ${({ theme }) => theme.figure * 2}rem;
-  color: #333;
+  color: ${({ theme }) => theme.color.gray_900};
 `

@@ -8,9 +8,9 @@ export const FooterWrapper = styled.div`
   padding: ${({ theme }) => theme.default_padding}rem;
   align-items: center;
   justify-content: space-between;
-  background: #3a3a3a;
+  background: ${({ theme }) => theme.color.gray_800};
   color: ${({ theme }) => theme.color.black};
-  border-top: 1px solid #85f032;
+  border-top: 1px solid ${({ theme }) => theme.color.key_color};
 `
 export const ContactWrapper = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export const InfoWrapper = styled.div`
   align-items: center;
 `
 export const ContactTitle = styled.div`
-  color: #9b9b9b;
+  color: ${({ theme }) => theme.color.gray_400};
 `
 export const ContactInfo = styled.div`
   display: flex;
@@ -38,9 +38,15 @@ export const Info = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.figure * 2}rem;
   font-size: ${({ theme }) => (theme.figure / 4) * 7}rem;
+  font-family: 'Apple SD Gothic Neo';
 `
 export const InstagramIcon = styled(instagramIcon)`
   width: ${({ theme }) => theme.figure * 3}rem;
   height: ${({ theme }) => theme.figure * 3}rem;
   ${({ theme }) => theme.pointer};
+  color: ${({ theme }) => theme.color.gray_400};
+  &:hover {
+    transition: all 0.8s;
+    color: ${({ theme }) => theme.color.key_color};
+  }
 `

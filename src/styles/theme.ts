@@ -45,6 +45,7 @@ const lightColor = {
 
   white: '#FFFFFF',
   black: '#000000',
+  key_color: '#85f032',
 
   gray_25: '#FCFCFC',
   gray_50: '#FBFBFB',
@@ -112,6 +113,7 @@ const darkColor = {
 
   white: '#FFFFFF',
   black: '#000000',
+  key_color: '#85f032',
 
   gray_25: '#1A1A1A',
   gray_50: '#393939',
