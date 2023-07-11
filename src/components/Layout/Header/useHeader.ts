@@ -7,14 +7,18 @@ const useHeader = () => {
   const handleHome = () => {
     goLocation(layout.index)
   }
-  const handleStudy = () => {
-    goLocation(layout.study)
+  const handleDaily = () => {
+    goLocation(layout.daily)
   }
   const handleAbout = () => {
     goLocation(layout.about)
   }
 
-  return { handleHome, handleStudy, handleAbout }
+  const handleAuth = () => {
+    goLocation(layout.auth)
+  }
+
+  return { handleHome, handleDaily, handleAbout, handleAuth }
 }
 
 export default useHeader

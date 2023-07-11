@@ -5,6 +5,7 @@ export const LayoutMainWrapper = styled.div`
   flex-direction: column;
   min-height: 100vh;
 `
+/*
 export const LayoutContent = styled.div<{
   mainBackground: string
 }>`
@@ -19,6 +20,22 @@ export const LayoutContent = styled.div<{
   justify-content: center;
   padding: ${({ theme }) => theme.default_padding}rem;
   ${({ mainBackground }) => mainBackground && `background: url(${mainBackground})`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+`
+*/
+export const LayoutContent = styled.div`
+  width: 100%;
+  min-width: ${({ theme }) => theme.breakpoints.values.minimum}px;
+  min-height: calc(
+    100vh - ${({ theme }) => theme.figure * 10}rem - ${({ theme }) => theme.figure * 20}rem
+  );
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: ${({ theme }) => theme.default_padding}rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

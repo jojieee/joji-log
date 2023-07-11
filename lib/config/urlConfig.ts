@@ -1,6 +1,7 @@
 export const layout = {
   index: '/',
-  study: '/study',
+  daily: '/daily',
   about: '/about',
-  content: '/content'
+  content: '/content',
+  auth: '/auth'
 }

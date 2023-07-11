@@ -1,5 +1,7 @@
 import HomeMain from '@/src/components/Home/HomeMain/HomeMain'
 
-export default function Home() {
+const Home = () => {
   return <HomeMain />
 }
+
+export default Home

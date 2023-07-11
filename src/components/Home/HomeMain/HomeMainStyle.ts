@@ -12,17 +12,18 @@ export const ContentWrapper = styled.div`
   padding: ${({ theme }) => theme.figure * 2}rem;
   width: ${({ theme }) => theme.figure * 30}rem;
   height: ${({ theme }) => theme.figure * 17}rem;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 20%);
-  }
-  box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+  box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 5%);
   transition: all 0.2s ease-in-out;
   background: rgba(238, 238, 238, 0.6);
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.figure * 2}rem;
-  border: 1px solid ${({ theme }) => theme.color.key_color};
+  border: 1px solid ${({ theme }) => theme.color.gray_200};
+  background: ${({ theme }) => theme.color.gray_100};
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 10%);
+  }
 `
 export const ContentTitle = styled.div`
   white-space: normal;
@@ -35,6 +36,6 @@ export const ContentTitle = styled.div`
 `
 export const Content = styled(ContentTitle)`
   -webkit-line-clamp: 4;
-  font-size: ${({ theme }) => theme.figure * 2}rem;
-  color: ${({ theme }) => theme.color.gray_900};
+  font-size: ${({ theme }) => (theme.figure / 4) * 7}rem;
+  line-height: ${({ theme }) => theme.figure * 2}rem;
 `

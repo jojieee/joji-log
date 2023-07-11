@@ -8,6 +8,7 @@ import {
   InstagramIcon
 } from './FooterStyle'
 import useFooter from './useFooter'
+import { ownerInfoData } from '@/lib/ownerInfoData'
 
 const Footer = () => {
   const { handleInstagram } = useFooter()
@@ -17,11 +18,15 @@ const Footer = () => {
         <ContactTitle>Contact Us</ContactTitle>
         <InfoWrapper>
           <ContactInfo>
-            <Info>
-              <div>ZOZI</div>
-              <div>010-9105-3768</div>
-              <div>jjw3768@gmail.com</div>
-            </Info>
+            {ownerInfoData.map((val, idx) => (
+              <Info key={idx}>
+                <div>{val.name}</div>
+                <div>{val.phone}</div>
+                <div>{val.email}</div>
+                <div>{val.address}</div>
+                <div>{val.bank}</div>
+              </Info>
+            ))}
           </ContactInfo>
 
           <InstagramIcon onClick={handleInstagram} />

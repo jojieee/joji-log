@@ -4,7 +4,7 @@ import joji from 'assets/joji-memoji.jpeg'
 import useHeader from './useHeader'
 
 const Header = () => {
-  const { handleHome, handleStudy, handleAbout } = useHeader()
+  const { handleHome, handleDaily, handleAbout, handleAuth } = useHeader()
 
   return (
     <HeaderWrapper>
@@ -12,10 +12,10 @@ const Header = () => {
         <Logo onClick={handleHome}>
           <Big>ZOZI</Big>studio.
         </Logo>
-        <Navs onClick={handleStudy}>Study</Navs>
-        <Navs onClick={handleAbout}>About</Navs>
+        <Navs onClick={handleDaily}>DAILY</Navs>
+        <Navs onClick={handleAbout}>ABOUT</Navs>
       </NavWrapper>
-      <Image src={joji} alt='조지의 미모지' width='40' height='40' />
+      <Image onClick={handleAuth} src={joji} alt='조지의 미모지' width='40' height='40' />
     </HeaderWrapper>
   )
 }
