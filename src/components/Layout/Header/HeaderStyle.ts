@@ -68,3 +68,10 @@ export const Navs = styled.div`
     width: 50%;
   }
 `
+
+export const NavMenu = styled.div<{
+  isToggleOpen: boolean
+}>`
+  display: ${({ isToggleOpen }) => (isToggleOpen ? 'block' : 'none')};
+  width: 100%;
+`
