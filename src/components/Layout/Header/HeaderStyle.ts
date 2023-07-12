@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import openIcon from 'assets/open.svg'
+import closeIcon from 'assets/close.svg'
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -20,9 +22,10 @@ export const HeaderWrapper = styled.div`
   }
 `
 
-export const NavWrapper = styled.div`
+export const NavWrapper = styled.div<{ isMobileSize: boolean }>`
   display: flex;
   align-items: center;
+  ${({ isMobileSize }) => isMobileSize && `flex-direction: column`}
 `
 
 export const Logo = styled.div`
@@ -75,3 +78,13 @@ export const NavMenu = styled.div<{
   display: ${({ isToggleOpen }) => (isToggleOpen ? 'block' : 'none')};
   width: 100%;
 `
+
+export const OpenIcon = styled(openIcon)`
+  width: 100%;
+  max-width: ${({ theme }) => theme.figure * 3}rem;
+  min-width: ${({ theme }) => theme.figure * 3}rem;
+  height: auto;
+  color: ${({ theme }) => theme.color.white};
+`
+
+export const CloseIcon = styled(OpenIcon)``

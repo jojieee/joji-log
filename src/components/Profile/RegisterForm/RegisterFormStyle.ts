@@ -16,7 +16,8 @@ export const FormWrapper = styled.form`
   flex-direction: column;
   justify-content: space-between;
   gap: ${({ theme }) => theme.figure * 3}rem;
-  width: ${({ theme }) => (theme.figure / 2) * 125}rem;
+  width: 100%;
+  max-width: ${({ theme }) => (theme.figure / 2) * 125}rem;
 `
 export const FieldsetWrapper = styled.fieldset`
   display: flex;
