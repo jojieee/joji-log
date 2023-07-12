@@ -3,5 +3,5 @@ export const layout = {
   daily: '/daily',
   about: '/about',
   content: '/content',
-  auth: '/auth'
+  register: '/user/registerForm'
 }

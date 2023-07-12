@@ -55,8 +55,10 @@ export const Info = styled.div`
   }
 `
 export const InstagramIcon = styled(instagramIcon)`
-  width: ${({ theme }) => theme.figure * 3}rem;
-  height: ${({ theme }) => theme.figure * 3}rem;
+  width: 100%;
+  max-width: ${({ theme }) => theme.figure * 3}rem;
+  min-width: ${({ theme }) => theme.figure * 3}rem;
+  height: auto;
   ${({ theme }) => theme.pointer};
   color: ${({ theme }) => theme.color.gray_300};
   margin-bottom: ${({ theme }) => theme.figure}rem;

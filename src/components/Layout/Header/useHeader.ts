@@ -13,12 +13,11 @@ const useHeader = () => {
   const handleAbout = () => {
     goLocation(layout.about)
   }
-
-  const handleAuth = () => {
-    goLocation(layout.auth)
+  const handleSignUp = () => {
+    goLocation(layout.register)
   }
 
-  return { handleHome, handleDaily, handleAbout, handleAuth }
+  return { handleHome, handleDaily, handleAbout, handleSignUp }
 }
 
 export default useHeader

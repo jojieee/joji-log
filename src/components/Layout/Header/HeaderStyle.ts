@@ -42,12 +42,13 @@ export const Big = styled.div`
 `
 
 export const Navs = styled.div`
-  padding: 0 ${({ theme }) => theme.figure * 3}rem;
+  padding: 0 ${({ theme }) => (theme.figure / 2) * 5}rem;
   ${({ theme }) => theme.pointer};
   transition: all 0.2s;
   position: relative;
   height: ${({ theme }) => theme.figure * 10}rem;
   line-height: ${({ theme }) => theme.figure * 10}rem;
+
   &:hover {
     color: ${({ theme }) => theme.color.key_color};
   }
@@ -64,6 +65,6 @@ export const Navs = styled.div`
     transition: width 0.2s ease-in-out;
   }
   &:hover::after {
-    width: calc(50%);
+    width: 50%;
   }
 `
