@@ -34,7 +34,7 @@ export const MobileNavWrapper = styled.div<{ isMobileSize: boolean }>`
       position: absolute;
       right: 0;
       top: ${theme.figure * 10}rem;
-      z-index: 99999;
+      z-index: 9998;
       background: ${theme.color.gray_900};
       width: 60%;
       height: calc(100vh - ${theme.figure * 10}rem);
