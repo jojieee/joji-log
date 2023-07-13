@@ -8,7 +8,6 @@ const useHeader = () => {
 
   const handleToggleOpen = () => {
     setIsToggleOpen(!isToggleOpen)
-    console.log('눌렸어')
   }
 
   const handleHome = () => {
@@ -26,7 +25,6 @@ const useHeader = () => {
 
   return {
     isToggleOpen,
-    setIsToggleOpen,
     handleToggleOpen,
     handleHome,
     handleDaily,
