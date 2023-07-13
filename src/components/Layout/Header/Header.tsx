@@ -3,6 +3,7 @@ import {
   HeaderWrapper,
   NavWrapper,
   MobileNavWrapper,
+  MobileNavContent,
   Big,
   Logo,
   Navs,
@@ -41,12 +42,14 @@ const Header = () => {
             </div>
           </HeaderWrapper>
           {isToggleOpen && (
-            <MobileNavWrapper isMobileSize={matchDownXs}>
-              <Navs onClick={handleDaily}>DAILY</Navs>
-              <Navs onClick={handleAbout}>ABOUT</Navs>
-              <Navs onClick={handleSignUp}>Sign up</Navs>
-              <Navs>Sign in</Navs>
-              {/* <Image  src={joji} alt='조지의 미모지' width='40' height='40' /> */}
+            <MobileNavWrapper>
+              <MobileNavContent isMobileSize={matchDownXs}>
+                <Navs onClick={handleDaily}>DAILY</Navs>
+                <Navs onClick={handleAbout}>ABOUT</Navs>
+                <Navs onClick={handleSignUp}>Sign up</Navs>
+                <Navs>Sign in</Navs>
+                {/* <Image  src={joji} alt='조지의 미모지' width='40' height='40' /> */}
+              </MobileNavContent>
             </MobileNavWrapper>
           )}
         </>
