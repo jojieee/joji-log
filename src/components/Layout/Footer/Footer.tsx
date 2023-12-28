@@ -24,7 +24,7 @@ const Footer = () => {
                 <div>{val.phone}</div>
                 <div>{val.email}</div>
                 <div>{val.address}</div>
-                <div>{val.bank}</div>
+                {/* <div>{val.bank}</div> */}
               </Info>
             ))}
           </ContactInfo>
